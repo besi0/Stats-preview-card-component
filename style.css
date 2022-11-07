@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(10, 12, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+main {
+    min-width: 600px;
+    z-index: 1;
+    display: flex;
+    margin: 16px;
+}
+
+section {
+    background-color: rgb(28, 25, 56);
+    display: flex;
+    flex-direction: column;
+    padding: 5.85em 7em 5.85em 5.85em;
+    width: 570px;    
+    min-width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+section h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+section h1 span {
+    color: rgb(170, 95, 218);
+}
+section .box {
+    margin-right: 32px;
+}
+section .main-p {
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 24px;
+    margin-bottom: 5em;
+}
+section ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+section ul h2 {
+    color: white;
+    margin-bottom: 0.3em;
+}
+section ul p {
+    font-family: "Lexend Deca", sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+.main-img {
+    min-height: 10em;
+    width: 540px;
+    min-width: 200px;
+    background: url(/images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+}
+.overlay {
+    background: hsl(277deg, 100%, 50%, 0.42);
+    height: 100%;
+}
+.overlay-2 {
+    background: hsl(277deg, 100%, 50%, 0.42);
+    height: 100%;
+    mix-blend-mode: color-burn;
+}
+@media only screen and (max-width: 1024px) {
+    :root {
+        font-size: 12px;
+    }
+    section {
+        padding: 3em 4.5em 3em 3em;
+    }
+}
+@media only screen and (max-width: 625px) {
+    body {
+        flex-direction: column;
+    }
+    main {
+        flex-direction: column-reverse;
+        margin: 10px;
+        min-width: 200px;
+        margin-top: 5em;
+    }
+    section {
+        padding: 0;
+        padding: 3em;
+        width: 300px;
+        border-radius: 0 0 10px 10px;
+    }
+    section h1, section .main-p {
+        text-align: center;
+    }
+    section .main-p {
+        font-size: 1.1rem;
+        margin-bottom: 2em;
+        line-height: 1.75em;
+    }
+    section .main-p {
+        margin-right: 0;
+    }
+    section ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    section ul li {
+        margin-bottom: 2em;
+    }
+    section ul h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0.25em;
+    }
+    section ul p {
+        font-size: 1.05rem;
+    }
+    .main-img {
+        height: 220px;
+        width: 300px;
+        border-radius: 10px 10px 0 0;
+        background: url(/images/image-header-mobile.jpg) no-repeat;
+        background-size: contain;
+    }
+    .attribution {
+        position: relative;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+.attribution { 
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    line-height: 20px; 
+    text-align: center;
+    margin-bottom: 10px; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: bold; 
+}
+.attribution a:hover {
+    color: rgb(170, 95, 218);
+}
